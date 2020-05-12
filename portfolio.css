@@ -1,0 +1,516 @@
+/*===========================================
+Colors Variables
+============================================*/
+
+html {
+	--grid-blue: 	#93BBC4;
+	--jet: 			#343434;
+	--mint-cream: 	#f7fff7;
+	--mint-cream-lite: #f8fffb;
+	--steel-teal: 	#607B7D;
+	--timber-wolf: #D8E0D8;
+ 
+
+	--font-primary: 'Playfair Display', Garamond, serif;
+	--font-secondary: 'Source Sans Pro', Helvetica, Arial, sans-serif; 
+
+	--ratio: 1.333;
+	--size-xlarge: calc( var(--size-large) * var(--ratio) );
+	--size-large: calc( var(--size-medium) * var(--ratio) );
+	--size-medium: calc( 1rem * var(--ratio) );
+	--size-small: .5;
+
+	--margin-standard: 0 auto;
+}
+
+/*=====================================================
+Typography
+======================================================*/
+
+html {
+	/*background-image: url("img/gridpaper-2.jpg");*/
+	color: var(--jet);
+	font-family: var(--font-primary);
+	margin: var(--margin-standard);
+	/*max-width: 75rem;*/
+}
+
+a {
+	color: var(--steel-teal);
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: var(--jet);
+}
+
+
+
+p {
+	color: var(--jet);
+	font-family: var(--font-secondary);
+	line-height: 1.5;
+
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+
+}
+
+h1{
+	font-size: var(--size-xlarge);
+}
+
+h2 {
+	font-size: var(--size-large);
+}
+
+h3 {
+	font-size: var(--size-medium);
+}
+
+h4 {
+	font-family: var(--font-secondary);
+}
+
+h5 {
+	font-family: var(--font-secondary);	
+}
+
+
+
+.featured-text {
+	color: var(--jet);
+	font-size: var(--size-medium);
+	padding: 1rem 2rem;
+}
+
+.tertiary-text {
+	color: var(--steel-teal);
+	font-size: var(--size-small);
+}
+
+.site-logo {
+	color: var(--jet);
+	font-size: var(--size-xlarge);
+	padding: 2rem;
+	text-decoration: none;
+}
+
+.site-logo:hover,.site-logo:focus {
+	text-decoration: none;
+}
+
+
+/*=====================================================
+Master Page Layout
+======================================================*/
+
+
+main {
+	margin: var(--margin-standard);
+}
+
+
+body {
+	background-color: var(--mint-cream);
+	margin: var(--margin-standard);
+}
+
+
+/*=====================================================
+Hero Block
+======================================================*/
+
+.wrapper {
+	background-color: var(--mint-cream-lite);
+	background-image: url('img/sky.jpg');
+	background-size: cover;
+	height: 500px;		
+	}
+
+
+.hero-quote {
+	margin: 0;
+
+
+}
+
+blockquote {
+	font-size: var(--size-xlarge);
+	max-width: 100rem;
+	margin-top: 0;
+	padding: 4rem 4rem;
+	
+
+	
+}
+
+cite {
+	color: var(--jet);
+	font-family: var(--font-secondary);
+	padding: 0;
+	text-transform: uppercase;
+}
+
+
+
+
+@media (max-width: 919px) {
+
+cite {
+	background-color: var(--mint-cream-lite);
+	padding-right: 1rem; 
+}
+
+}
+
+/*=====================================================
+Images
+======================================================*/
+
+
+.bio-photo {
+	border-radius: 50%;
+	display: block;
+	filter: grayscale(1);
+	margin: var(--margin-standard);
+	max-width: 50%;
+}
+
+
+.bio-photo:hover {
+	 filter: drop-shadow(5px 5px 1px var(--steel-teal));
+}
+
+.interest-photo {
+	display: block;
+	filter: grayscale(1);
+	padding-bottom: 2rem;
+	max-width: 100%;
+}
+
+.interest-photo:hover {
+	 filter: drop-shadow(5px 5px 1px var(--steel-teal));
+}
+
+
+/*=====================================================
+Navigation 
+======================================================*/
+
+
+/*.nav-primary {
+	position: absolute;
+	right: 0;
+	padding-right: 10rem;
+}
+*/
+
+
+nav li {
+	display: inline-block;
+	font-family: var(--font-secondary);
+	list-style-type: none;
+	margin: 0;
+	padding-right: 1rem;
+	text-decoration: none;
+}
+
+
+
+.nav-secondary ul {
+	padding-left: 2rem;
+}
+
+.current-page {
+	color: var(--jet);
+	padding: .5rem;
+}
+
+
+/*=============================================
+Link Button Component
+===============================================*/
+
+.link-button-hero {
+	background-color: var(--);
+	box-shadow: .25rem .25rem 0 rgba( 0, 0, 0, .3 );
+	border: 1px solid;
+    color: var(--steel-teal);
+    display: inline-block;
+    padding: 1rem 1.5rem;
+
+}
+
+.link-button-hero:hover, .link-button-hero:focus {
+	background-color: var(--jet);
+	color: var(--mint-cream-lite);
+	text-decoration: underline;
+	box-shadow: .25rem .25rem 1rem;
+    outline: none;
+}
+
+
+
+
+
+/*=====================================================
+Header Page Component
+======================================================*/
+
+
+header {
+	background-color: var(--timber-wolf);
+	letter-spacing: .05em;
+	margin: var(--margin-standard);
+	padding: 1rem 0 1rem 0;
+
+
+}
+
+
+/*=====================================================
+Footer Component
+======================================================*/
+
+
+footer {
+	background-color: var(--timber-wolf);
+	letter-spacing: .05em;
+	margin: var(--margin-standard);
+	padding: 1rem 0;
+}
+
+
+.footer-info {
+	background-color: var(--timber-wolf);
+	color: var(--mint-cream-lite);
+	list-style: none;
+	letter-spacing: .05em;
+	margin: var(--margin-standard);
+	padding-left: 2rem;
+	text-shadow: 1px 1px 1px var(--steel-teal);
+	
+}
+
+/*=====================================================
+Index
+======================================================*/
+
+.center-content {
+	margin: var(--margin-standard);
+	max-width: 35rem;
+	padding: 0 2rem 2rem;
+}
+
+
+/*=====================================================
+Resume
+======================================================*/
+
+.resume-featured-text {
+	color: var(--mint-cream);
+	background-color: var(--jet);
+	font-size: var(--size-medium);
+	margin: 0;
+	padding-left: .5rem;
+	text-transform: uppercase;
+}
+
+.resume-tertiary-text {
+	color: var(--steel-teal);
+	font-size: var(--size-small);
+	margin: 0;
+	padding-top: .5rem;
+	text-transform: uppercase;
+}
+
+.job-description {
+	color: var(--steel-teal);
+	margin-top: .5rem;
+	margin-bottom: .5;
+}
+
+.skills-text {
+	background-color: var(--timber-wolf);
+	color: var(--jet);
+	font-family: var(--font-secondary);
+	
+	list-style-type: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background-color 1s linear;
+}
+
+.skills-text:hover {
+	background-image: url(img/wrinkled-paper-texture-lite.jpg);
+	color: var(--jet);
+	font-weight: 900;
+	padding: 3rem 1rem;
+	transition: all .75s ease;
+
+}
+
+.education {
+	background-color: var(--timber-wolf);
+	padding: 1rem;
+	text-align: center;
+}
+
+.education:hover {
+	background-image: url(img/wrinkled-paper-texture-lite.jpg);
+	color: var(--jet);
+	font-weight: 900;
+	padding: 3rem 1rem;
+	transition: all .75s ease;
+
+}
+
+
+.resume-education-text {
+	color: var(--jet);
+	font-size: var(--size-small);
+	margin: 0;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	text-transform: uppercase;
+}
+
+.college-text {
+	color: var(--jet);
+	font-size: var(--size-medium);
+	margin: 0;
+	text-transform: uppercase;
+	
+}
+
+.skills-text li {
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+
+/*=====================================================
+Cards
+======================================================*/
+
+.portfolio-card {
+	max-width: 100%;
+	position: relative;
+ 
+}
+
+.card-content {
+	background-color: var(--jet);
+  	bottom: 0;
+  	height: 100%;
+  	opacity: 0;
+  	position: absolute;
+  	top: 0;
+  	transition: .5s ease;
+  	width: 100%;
+}
+
+.portfolio-card:hover .card-content{
+	opacity:1;
+	box-shadow: 2px 2px 1px var(--steel-teal);
+}
+
+.card-text {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-text p {
+  color: var(--mint-cream-lite);
+  position: center;
+  }
+
+ .card-title {
+  		font-size: var(--size-medium);
+  		text-transform: uppercase;
+  }
+
+
+/*=====================================================
+Portfolio Pages
+======================================================*/
+
+
+.project-slides {
+	background-color: var(--timber-wolf);
+	display: block;
+	max-width: 100%;
+	
+}
+
+.space-below-project-slides {
+	background-color: var(--timber-wolf);
+	display: block;
+	max-width: 100%;
+	padding-bottom: 3rem;
+}
+
+
+
+
+/*=====================================================
+Grids - Card Container
+======================================================*/
+
+
+
+.card-container {
+	display: grid;
+	grid-gap: 2rem;
+
+}
+
+.card-container img {
+	max-width: 100%;
+}
+
+@media (min-width: 750px ) {
+	
+	.card-container {
+		align-items: stretch;
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card-title p {
+  		font-size: var(--size-small);
+  }
+
+@media (min-width: 1280px) {
+	.card-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
+
+
+
+
+/*
+@media ( min-width: 800px ) {
+
+	.card-container {
+		grid-template-columns: 1fr 1fr;
+		max-width: 1300px;
+	}
+}
+*/
+
+
+
+
