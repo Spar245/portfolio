@@ -157,7 +157,7 @@ Images
 }
 
 .bio-photo:hover {
-	 filter: drop-shadow(5px 5px 1px var(--steel-teal));
+	filter: drop-shadow(5px 5px 1px var(--steel-teal));
 }
 
 .interest-photo {
@@ -168,7 +168,7 @@ Images
 }
 
 .interest-photo:hover {
-	 filter: drop-shadow(5px 5px 1px var(--steel-teal));
+	filter: drop-shadow(5px 5px 1px var(--steel-teal));
 }
 
 /*=====================================================
@@ -200,9 +200,9 @@ Contact
 input[type=text], textarea {
 	background-color: var(--mint-cream-lite);
 	border: 1px solid;
-	box-shadow: .25rem .25rem 0 rgba( 0, 0, 0, .3 );
+	box-shadow: .25rem .25rem 0 rgba(0, 0, 0, .3);
 	box-sizing: border-box;
-	padding: 15px;
+	
 	margin-bottom: 10px;
 	margin-top: 4px;
 	width: 100%;
@@ -211,7 +211,7 @@ input[type=text], textarea {
 
 button[type=submit] {
 	border: 1px solid;
-	box-shadow: .25rem .25rem 0 rgba( 0, 0, 0, .3 );
+	box-shadow: .25rem .25rem 0 rgba(0, 0, 0, .3);
     color: var(--steel-teal);
     font-family: var(--font-primary);
     margin: .5rem;
@@ -353,11 +353,39 @@ Resume
 }
 
 .skills-text:hover {
-	background-image: url(img/wrinkled-paper-texture-lite.jpg);
+	background-image: url(img/gridpaper.jpg);
 	color: var(--jet);
 	font-weight: 900;
 	padding: 3rem 1rem;
 	transition: all .75s ease;
+}
+
+.experience {
+	background-color: var(--timber-wolf);
+	padding: 2rem;
+}
+
+.experience:hover {
+	animation: colorchange 5s linear;
+}
+
+@keyframes colorchange {
+	
+	0% {
+		background: var(--mint-cream-lite);
+	}
+	
+	40% {
+		background: var(--timber-wolf);
+	}
+	
+	80% {
+		background: var(--mint-cream-lite);
+	}
+
+	100% {
+		background: var(--timber-wolf);
+	}
 }
 
 .education {
@@ -367,7 +395,7 @@ Resume
 }
 
 .education:hover {
-	background-image: url(img/wrinkled-paper-texture-lite.jpg);
+	background-image: url(img/gridpaper.jpg);
 	color: var(--jet);
 	font-weight: 900;
 	padding: 3rem 1rem;
