@@ -3,7 +3,6 @@ Colors Variables
 ============================================*/
 
 html {
-	--grid-blue: 	#93BBC4;
 	--jet: 			#343434;
 	--mint-cream: 	#f7fff7;
 	--mint-cream-lite: #f8fffb;
@@ -28,11 +27,9 @@ Typography
 ======================================================*/
 
 html {
-	/*background-image: url("img/gridpaper-2.jpg");*/
 	color: var(--jet);
 	font-family: var(--font-primary);
 	margin: var(--margin-standard);
-	/*max-width: 75rem;*/
 }
 
 a {
@@ -44,17 +41,10 @@ a:hover, a:focus {
 	color: var(--jet);
 }
 
-
-
 p {
 	color: var(--jet);
 	font-family: var(--font-secondary);
 	line-height: 1.5;
-
-}
-
-h1, h2, h3, h4, h5, h5, h6 {
-
 }
 
 h1{
@@ -77,7 +67,9 @@ h5 {
 	font-family: var(--font-secondary);	
 }
 
-
+h6 {
+	font-family: var(--font-secondary);	
+}
 
 .featured-text {
 	color: var(--jet);
@@ -101,11 +93,9 @@ h5 {
 	text-decoration: none;
 }
 
-
 /*=====================================================
 Master Page Layout
 ======================================================*/
-
 
 main {
 	margin: var(--margin-standard);
@@ -117,7 +107,6 @@ body {
 	margin: var(--margin-standard);
 }
 
-
 /*=====================================================
 Hero Block
 ======================================================*/
@@ -127,13 +116,10 @@ Hero Block
 	background-image: url('img/sky.jpg');
 	background-size: cover;
 	height: 500px;		
-	}
-
+}
 
 .hero-quote {
 	margin: 0;
-
-
 }
 
 blockquote {
@@ -141,9 +127,6 @@ blockquote {
 	max-width: 100rem;
 	margin-top: 0;
 	padding: 4rem 4rem;
-	
-
-	
 }
 
 cite {
@@ -153,22 +136,17 @@ cite {
 	text-transform: uppercase;
 }
 
-
-
-
 @media (max-width: 919px) {
 
-cite {
-	background-color: var(--mint-cream-lite);
-	padding-right: 1rem; 
-}
-
+	cite {
+		background-color: var(--mint-cream-lite);
+		padding-right: 1rem; 
+	}
 }
 
 /*=====================================================
 Images
 ======================================================*/
-
 
 .bio-photo {
 	border-radius: 50%;
@@ -177,7 +155,6 @@ Images
 	margin: var(--margin-standard);
 	max-width: 50%;
 }
-
 
 .bio-photo:hover {
 	 filter: drop-shadow(5px 5px 1px var(--steel-teal));
@@ -194,19 +171,9 @@ Images
 	 filter: drop-shadow(5px 5px 1px var(--steel-teal));
 }
 
-
 /*=====================================================
 Navigation 
 ======================================================*/
-
-
-/*.nav-primary {
-	position: absolute;
-	right: 0;
-	padding-right: 10rem;
-}
-*/
-
 
 nav li {
 	display: inline-block;
@@ -217,8 +184,6 @@ nav li {
 	text-decoration: none;
 }
 
-
-
 .nav-secondary ul {
 	padding-left: 2rem;
 }
@@ -228,52 +193,98 @@ nav li {
 	padding: .5rem;
 }
 
+/*=====================================================
+Contact
+======================================================*/
+
+input[type=text], textarea {
+	background-color: var(--mint-cream-lite);
+	border: 1px solid;
+	box-shadow: .25rem .25rem 0 rgba( 0, 0, 0, .3 );
+	box-sizing: border-box;
+	padding: 15px;
+	margin-bottom: 10px;
+	margin-top: 4px;
+	width: 100%;
+	padding: 15px;
+}
+
+button[type=submit] {
+	border: 1px solid;
+	box-shadow: .25rem .25rem 0 rgba( 0, 0, 0, .3 );
+    color: var(--steel-teal);
+    font-family: var(--font-primary);
+    margin: .5rem;
+    padding: 1rem 1.5rem;
+}
+
+button[type=submit]:hover {
+	background-color: var(--jet);
+	box-shadow: .25rem .25rem 1rem;
+	color: var(--mint-cream-lite);
+	outline: none;
+}
+
+label {
+ 	display: block;
+ 	margin: 0;
+ 	padding: .5rem;
+}
+
+form {
+	padding: 2rem;
+}
+
+textarea {
+	background-color: var(--mint-cream-lite);
+	min-height: 5rem;
+}
+
+textarea:focus {
+	outline: none !important;
+    border: 2px solid var(--jet);
+    box-shadow: 0 0 10px var(--jet);
+}
+
+input:focus {
+	outline: none !important;
+    border: 2px solid var(--jet);
+    box-shadow: 0 0 10px var(--jet);
+}
 
 /*=============================================
-Link Button Component
+Action Button Component
 ===============================================*/
 
-.link-button-hero {
-	background-color: var(--);
-	box-shadow: .25rem .25rem 0 rgba( 0, 0, 0, .3 );
+.link-action-contact-button {
 	border: 1px solid;
+	box-shadow: .25rem .25rem 0 rgba( 0, 0, 0, .3 );
     color: var(--steel-teal);
     display: inline-block;
     padding: 1rem 1.5rem;
-
 }
 
-.link-button-hero:hover, .link-button-hero:focus {
+.link-action-contact-button:hover, .link-action-contact-button:focus {
 	background-color: var(--jet);
-	color: var(--mint-cream-lite);
-	text-decoration: underline;
 	box-shadow: .25rem .25rem 1rem;
-    outline: none;
+	color: var(--mint-cream-lite);
+	outline: none;	
 }
-
-
-
-
 
 /*=====================================================
 Header Page Component
 ======================================================*/
-
 
 header {
 	background-color: var(--timber-wolf);
 	letter-spacing: .05em;
 	margin: var(--margin-standard);
 	padding: 1rem 0 1rem 0;
-
-
 }
-
 
 /*=====================================================
 Footer Component
 ======================================================*/
-
 
 footer {
 	background-color: var(--timber-wolf);
@@ -282,16 +293,14 @@ footer {
 	padding: 1rem 0;
 }
 
-
 .footer-info {
 	background-color: var(--timber-wolf);
 	color: var(--mint-cream-lite);
-	list-style: none;
 	letter-spacing: .05em;
+	list-style: none;
 	margin: var(--margin-standard);
 	padding-left: 2rem;
-	text-shadow: 1px 1px 1px var(--steel-teal);
-	
+	text-shadow: 1px 1px 1px var(--jet);
 }
 
 /*=====================================================
@@ -303,7 +312,6 @@ Index
 	max-width: 35rem;
 	padding: 0 2rem 2rem;
 }
-
 
 /*=====================================================
 Resume
@@ -336,7 +344,6 @@ Resume
 	background-color: var(--timber-wolf);
 	color: var(--jet);
 	font-family: var(--font-secondary);
-	
 	list-style-type: none;
 	padding: 1rem;
 	text-align: center;
@@ -351,7 +358,6 @@ Resume
 	font-weight: 900;
 	padding: 3rem 1rem;
 	transition: all .75s ease;
-
 }
 
 .education {
@@ -366,9 +372,7 @@ Resume
 	font-weight: 900;
 	padding: 3rem 1rem;
 	transition: all .75s ease;
-
 }
-
 
 .resume-education-text {
 	color: var(--jet);
@@ -384,7 +388,6 @@ Resume
 	font-size: var(--size-medium);
 	margin: 0;
 	text-transform: uppercase;
-	
 }
 
 .skills-text li {
@@ -395,7 +398,6 @@ Resume
     padding: .5rem;
 }
 
-
 /*=====================================================
 Cards
 ======================================================*/
@@ -403,8 +405,7 @@ Cards
 .portfolio-card {
 	max-width: 100%;
 	position: relative;
- 
-}
+ }
 
 .card-content {
 	background-color: var(--jet);
@@ -417,39 +418,36 @@ Cards
   	width: 100%;
 }
 
-.portfolio-card:hover .card-content{
-	opacity:1;
+.portfolio-card:hover .card-content {
 	box-shadow: 2px 2px 1px var(--steel-teal);
+	opacity:1;
 }
 
 .card-text {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	left: 50%;
+  	position: absolute;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
 }
 
 .card-text p {
-  color: var(--mint-cream-lite);
-  position: center;
-  }
+  	color: var(--mint-cream-lite);
+  	position: center;
+}
 
- .card-title {
-  		font-size: var(--size-medium);
-  		text-transform: uppercase;
-  }
-
+.card-title {
+  	font-size: var(--size-medium);
+  	text-transform: uppercase;
+}
 
 /*=====================================================
 Portfolio Pages
 ======================================================*/
 
-
 .project-slides {
 	background-color: var(--timber-wolf);
 	display: block;
 	max-width: 100%;
-	
 }
 
 .space-below-project-slides {
@@ -459,19 +457,13 @@ Portfolio Pages
 	padding-bottom: 3rem;
 }
 
-
-
-
 /*=====================================================
 Grids - Card Container
 ======================================================*/
 
-
-
 .card-container {
 	display: grid;
 	grid-gap: 2rem;
-
 }
 
 .card-container img {
@@ -489,7 +481,7 @@ Grids - Card Container
 
 	.card-title p {
   		font-size: var(--size-small);
-  }
+  	}
 
 @media (min-width: 1280px) {
 	.card-container {
@@ -501,15 +493,6 @@ Grids - Card Container
 
 
 
-/*
-@media ( min-width: 800px ) {
-
-	.card-container {
-		grid-template-columns: 1fr 1fr;
-		max-width: 1300px;
-	}
-}
-*/
 
 
 
